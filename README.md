@@ -1,2 +1,56 @@
-# UR5e_robotiq_gripper_RViz
-configuring UR5e roboter with 2F_140 robotiq adaptive gripper on RViz
+# UR5e Robotiq Gripper Visualization in RViz
+
+This ROS 2 package provides a visualization setup for the UR5e robotic arm with a Robotiq gripper using RViz. It includes all necessary configuration files, launch files, and description files to get you started with visualizing the robot in a simulated environment.
+
+## Features
+
+- UR5e robotic arm and Robotiq gripper integration
+- Ready-to-use RViz configuration
+- Customizable Xacro files for robot descriptions
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- ROS 2
+- RViz2
+
+## Installation
+
+To install the UR5e Robotiq Gripper Visualization package, follow these steps:
+
+```bash
+# Source your ROS 2 workspace
+source /opt/ros/<ros2_distro>/setup.bash
+
+# Clone the repository into your ROS 2 workspace
+cd ~/your_ros2_ws/src
+git clone https://github.com/Sohaib-Snouber/UR5e_robotiq_gripper_RViz.git
+
+# Build the package
+cd ~/your_ros2_ws
+colcon build --packages-select ur5e_robotiq_gripper_visualization
+
+# Source the workspace
+source ~/your_ros2_ws/install/setup.bash
+```
+
+## Usage
+
+To run the visualization, use the provided launch file:
+
+```bash
+ros2 launch ur5e_robotiq_gripper_visualization view_ur5e_gripper.launch.py
+```
+
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
+## Acknowledgments
+
+- Thanks to [Universal Robots](https://www.universal-robots.com/](https://github.com/UniversalRobots/Universal_Robots_ROS_Driver) for providing detailed models and documentation of their robotic systems.
+- Thanks to [Robotiq](https://github.com/ros-industrial/robotiq) for the open-source gripper models and control software which have been integral to this visualization project.
+- Special thanks to all the contributors of the ROS community whose shared insights and code snippets have been invaluable.
+```
