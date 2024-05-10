@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="ur5e_robot">
+  <!--
+    This is a convenience top-level xacro which loads the macro for the UR5e
+    which defines the default values for the various "parameters files"
+    parameters for a UR5e.
+
+    This file is only useful when loading a stand-alone, completely isolated
+    robot with only default values for all parameters such as the kinematics,
+    visual and physical parameters and joint limits.
+
+    This file is not intended to be integrated into a larger scene or other
+    composite xacro.
+
+    Instead, xacro:include 'inc/ur5e_macro.xacro' and override the defaults
+    for the arguments to that macro.
+
+    Refer to 'inc/ur_macro.xacro' for more information.
+  -->
+
+  <xacro:include filename="$(find ur_description)/urdf/inc/ur5e_macro.xacro"/>
+  <xacro:ur5e_robot prefix="" />
+  
+  <!-- Include the Robotiq gripper files -->
+  <xacro:include filename="$(find robotiq_2f_140_gripper_visualization)/urdf/robotiq_arg2f.xacro"/>
+  <xacro:include filename="$(find robotiq_2f_140_gripper_visualization)/urdf/robotiq_arg2f_140_model.xacro"/>
+
+  <!-- Define the joint connecting the wrist of the UR5e to the base link of the gripper -->
+  <joint name="wrist_3_to_gripper_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/> <!-- Adjust as needed for correct positioning -->
+    <parent link="wrist_3_link"/>
+    <child link="robotiq_arg2f_base_link"/> <!-- Ensure this matches the actual base link name -->
+  </joint>
+</robot>
