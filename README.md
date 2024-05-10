@@ -1,8 +1,9 @@
 # UR5e Robotiq Gripper Visualization in RViz
 
 This ROS 2 package provides a visualization setup for the UR5e robotic arm with a Robotiq gripper using RViz. It includes all necessary configuration files, launch files, and description files to get you started with visualizing the robot in a simulated environment.
-
+![Screenshot from 2024-05-10 23-34-35](https://github.com/Sohaib-Snouber/UR5e_robotiq_gripper_RViz/assets/81733750/ba4a8526-0f9c-4a3d-bfa0-a26c5968265e)
 ## Features
+
 
 - UR5e robotic arm and Robotiq gripper integration
 - Ready-to-use RViz configuration
