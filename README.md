@@ -51,7 +51,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Acknowledgments
 
-- Thanks to [Universal Robots](https://www.universal-robots.com/](https://github.com/UniversalRobots/Universal_Robots_ROS_Driver) for providing detailed models and documentation of their robotic systems.
+- Thanks to [Universal Robots](https://github.com/UniversalRobots/Universal_Robots_ROS2_Description) for providing detailed models and documentation of their robotic systems.
 - Thanks to [Robotiq](https://github.com/ros-industrial/robotiq) for the open-source gripper models and control software which have been integral to this visualization project.
 - Special thanks to all the contributors of the ROS community whose shared insights and code snippets have been invaluable.
 ```
