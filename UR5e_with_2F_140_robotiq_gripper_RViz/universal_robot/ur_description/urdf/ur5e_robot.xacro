@@ -27,7 +27,7 @@
 
   <!-- Define the joint connecting the wrist of the UR5e to the base link of the gripper -->
   <joint name="wrist_3_to_gripper_joint" type="fixed">
-    <origin xyz="0 0 0" rpy="0 0 0"/> <!-- Adjust as needed for correct positioning -->
+    <origin xyz="0 0 0" rpy="0 0 1.5707963267948966"/> <!-- Adjust as needed for correct positioning -->
     <parent link="wrist_3_link"/>
     <child link="robotiq_arg2f_base_link"/> <!-- Ensure this matches the actual base link name -->
   </joint>
