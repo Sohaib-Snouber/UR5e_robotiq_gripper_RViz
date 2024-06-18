@@ -231,7 +231,7 @@
     <collision>
       <origin rpy="1.5707963267948966 0 -1.5707963267948966" xyz="0 0 0.007"/>
       <geometry>
-        <mesh filename="package://ur_description/meshes/ur5e/collision/forearm.stl"/>
+        <mesh filename="package://ur_description/meshes/ur5e/collision/forearm_test.stl"/>
       </geometry>
     </collision>
     <inertial>

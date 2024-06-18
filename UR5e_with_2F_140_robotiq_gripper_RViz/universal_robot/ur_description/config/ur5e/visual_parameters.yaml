@@ -34,7 +34,7 @@ mesh_files:
         name: "LightGrey"
         color: "0.7 0.7 0.7 1.0"
     collision:
-      mesh: "package://ur_description/meshes/ur5e/collision/forearm.stl"
+      mesh: "package://ur_description/meshes/ur5e/collision/forearm_test.stl"
 
   wrist_1:
     visual:
